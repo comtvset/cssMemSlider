@@ -244,5 +244,10 @@ input#slide3:checked~.text-wrap>.text-slide>.text {
 }
 
 input#slide4:checked~.text-wrap>.text-slide>.text {
-    transform: translateY(-450%);
+    transform: translateY(-300%);
+}
+@media (max-width:768px) {
+    input#slide4:checked~.text-wrap>.text-slide>.text {
+        transform: translateY(-450%);
+    }
 }
