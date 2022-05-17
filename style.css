@@ -143,6 +143,7 @@ h1 {
 	-moz-transition: background ease-in-out .5s;
 	-o-transition: background ease-in-out .5s;
 	transition: background ease-in-out .5s;
+    
 }
 
 .wrapper label:hover, 
@@ -150,7 +151,7 @@ h1 {
 #slide2:checked ~ .text-wrap > .controls > label:nth-of-type(2),
 #slide3:checked ~ .text-wrap >.controls > label:nth-of-type(3),
 #slide4:checked ~ .text-wrap >.controls >label:nth-of-type(4){
-  background: #ddd;
+  background: #ddd;  
 }
 
 .slides {
