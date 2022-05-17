@@ -102,7 +102,7 @@ h1 {
 	display: none;
 }
   
-.wrapper label {
+.wrapper label span{
 	cursor: pointer;
 	display: inline-block;
     height: 1.3em;
@@ -113,7 +113,7 @@ h1 {
 	border-radius: 50%;
 }
 
-.wrapper label:after {
+.wrapper label span:after {
 	border: 2px solid #ddd;
 	content: " ";
 	display: block;
