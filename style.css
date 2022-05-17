@@ -19,7 +19,7 @@ h1 {
 
 .container {
     margin: auto;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .wrapper {
@@ -184,5 +184,7 @@ input#slide4:checked~.text-wrap>.text-slide>.text {
 }
 
 @media (max-width:768px) {
-
+ * {
+    --main-size: 15em;
+  }
 }
