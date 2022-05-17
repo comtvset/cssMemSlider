@@ -124,10 +124,10 @@ h1 {
 	width: inherit;
 	z-index: 0;
 	
-    -webkit-transform: scale(1.2);
-	-moz-transform: scale(1.2);
-	-o-transform: scale(1.2);
-	transform: scale(1.2);
+    -webkit-transform: scale(-1);
+	-moz-transform: scale(-1);
+	-o-transform: scale(-1);
+	transform: scale(-1);
 	-webkit-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
 	-moz-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
 	-o-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
@@ -184,6 +184,25 @@ input#slide4:checked~.text-wrap>.text-slide>.text {
 
 @media (max-width:768px) {
  * {
-    --main-size: 15em;
+    --main-size: 28em;
   }
+
+  .text-wrap {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .controls {
+    order: 1;
+  }
+
+  .text-slide {
+    order: 2;
+  }
+
+  .text {
+      text-align: center;
+  }
+
 }
