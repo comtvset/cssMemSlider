@@ -14,7 +14,7 @@ html {
 }
 @media (max-width:768px) {
     * {
-       --main-size: 20em;
+       --main-size: 16em;
     }
 }
 
@@ -33,8 +33,8 @@ h1 {
 }
 @media (max-width:768px) {
     .wrapper { 
-        height: 19rem;
-        width: 20rem;
+        height: 15rem;
+        width: 16rem;
     }
 }
 
@@ -58,7 +58,7 @@ h1 {
 }
 @media (max-width:768px) {
     .slide1 { 
-        background-size: 20em;
+        background-size: 16em;
     }
 }
 .slide2 { 
@@ -67,7 +67,7 @@ h1 {
 }
 @media (max-width:768px) {
     .slide2 { 
-        background-size: 20em;
+        background-size: 16em;
     }
 }
 .slide3 { 
@@ -76,7 +76,7 @@ h1 {
 }
 @media (max-width:768px) {
     .slide3 { 
-        background-size: 20em;
+        background-size: 16em;
     }
 }
 .slide4 { 
@@ -85,7 +85,7 @@ h1 {
 }
 @media (max-width:768px) {
     .slide4 { 
-        background-size: 20em;
+        background-size: 16em;
     }
 }
 
