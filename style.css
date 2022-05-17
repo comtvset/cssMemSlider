@@ -216,7 +216,8 @@ h1 {
 }
 @media (max-width:768px) {
     .text {
-        text-align: center;
+        text-align: start;
+        margin-top: 2em;
     }
 }
 
@@ -227,11 +228,21 @@ input#slide1:checked~.text-wrap>.text-slide>.text {
 input#slide2:checked~.text-wrap>.text-slide>.text {
     transform: translateY(-100%);
 }
+@media (max-width:768px) {
+    input#slide2:checked~.text-wrap>.text-slide>.text {
+        transform: translateY(-150%);
+    }
+}
 
 input#slide3:checked~.text-wrap>.text-slide>.text {
     transform: translateY(-200%);
 }
+@media (max-width:768px) {
+    input#slide3:checked~.text-wrap>.text-slide>.text {
+        transform: translateY(-300%);
+    }
+}
 
 input#slide4:checked~.text-wrap>.text-slide>.text {
-    transform: translateY(-300%);
+    transform: translateY(-450%);
 }
