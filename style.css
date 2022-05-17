@@ -1,28 +1,31 @@
 html {
     background-color: black;
+    scroll-behavior: smooth;
+    font-size: 20px;
 }
 
-  * {
-	margin: 0;
-	padding: 0;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	-o-box-sizing: border-box;
-	box-sizing: border-box;
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-  h1 {
-      color: #ffffff;
-  }
-
-  .wrapper {
-	height: 32rem;
-    width: 35rem;
-	margin: 75pt auto 0;
+h1 {
+    color: #ffffff;
 }
 
-span {
-    color: #ddd;
+.container {
+    margin: auto;
+    overflow: hidden;
+}
+
+.wrapper {
+    height: 26rem;
+    width: 28rem;
+    margin: auto;
 }
 
 .slider {
@@ -30,15 +33,13 @@ span {
 	height: inherit;
 	overflow: hidden;
 	width: inherit;
-	-webkit-box-shadow: 0 0 20px rgba(0, 0, 0, .5);
-	-moz-box-shadow: 0 0 20px rgba(0, 0, 0, .5);
-	-o-box-shadow: 0 0 20px rgba(0, 0, 0, .5);
-	box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+    margin-top: 2em;
 }
 
 .slides {
 	height: inherit;
 	width: inherit;
+    margin: auto;
 }
 
 .slide1 { 
@@ -58,24 +59,18 @@ span {
     background-repeat: no-repeat;
 }
 
-.wrapper .text {
-
-
-}
-
-.wrapper .controls {
-	left: 10%;
+.controls {
+    display: flex;
 }
 .wrapper > input {
 	display: none;
 }
+  
 .wrapper label {
 	cursor: pointer;
 	display: inline-block;
-	height: 6pt;
-	margin: 18.75pt 9pt 0 12pt;
-	position: relative;
-	width: 6pt;
+    height: 1.3em;
+    width: 1.3em;
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
 	-o-border-radius: 50%;
@@ -83,14 +78,14 @@ span {
 }
 
 .wrapper label:after {
-	border: 1.5pt solid #ddd;
+	border: 2px solid #ddd;
 	content: " ";
 	display: block;
-	height: 9pt;
-	left: -4px;
+	height: 0.6em;
+	left: -0.2em;
 	position: absolute;
-	top: -4px;
-	width: 9pt;
+	top: -0.2em;
+	width: 0.6em;
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
 	-o-border-radius: 50%;
@@ -100,10 +95,10 @@ span {
 .wrapper label {
 	cursor: pointer;
 	display: inline-block;
-	height: 6pt;
-	margin: 18.75pt 9pt 0 12pt;
+	height: 0.4em;
+	margin: 1.5625em 0.75em 0 1em;
 	position: relative;
-	width: 6pt;
+	width: 0.4em;
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
 	-o-border-radius: 50%;
@@ -122,16 +117,18 @@ span {
 	background: #ddd;
 }
 
+
 .slides {
 	height: inherit;
 	opacity: 0;
 	position: absolute;
 	width: inherit;
 	z-index: 0;
-	-webkit-transform: scale(1.5);
-	-moz-transform: scale(1.5);
-	-o-transform: scale(1.5);
-	transform: scale(1.5);
+	
+    -webkit-transform: scale(1.2);
+	-moz-transform: scale(1.2);
+	-o-transform: scale(1.2);
+	transform: scale(1.2);
 	-webkit-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
 	-moz-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
 	-o-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
@@ -148,4 +145,44 @@ span {
 	-moz-transform: scale(1);
 	-o-transform: scale(1);
 	transform: scale(1);
+}
+
+.text-wrap {
+    margin-top: 1em;
+    width: var(--main-size);
+    display: flex;
+    justify-content: space-between;
+}
+
+.text-slide {
+    height: 4em;
+    overflow: hidden;
+} 
+
+.text {
+    color: #ddd;
+    height: 4em;
+    -webkit-transition: all 0.6s ease-out;
+    transition: all 0.6s ease-out;
+    line-height: 3.0;
+}
+
+input#slide1:checked~.text-wrap>.text-slide>.text {
+    transform: translateY(0);
+}
+
+input#slide2:checked~.text-wrap>.text-slide>.text {
+    transform: translateY(-100%);
+}
+
+input#slide3:checked~.text-wrap>.text-slide>.text {
+    transform: translateY(-200%);
+}
+
+input#slide4:checked~.text-wrap>.text-slide>.text {
+    transform: translateY(-300%);
+}
+
+@media (max-width:768px) {
+
 }
