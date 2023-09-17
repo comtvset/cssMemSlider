@@ -15,7 +15,7 @@ html {
 }
 
 h1 {
-    color: #ffffff;
+    color: white;
 }
 
 .container {
@@ -89,18 +89,17 @@ input[type="radio"] {
 label {
     display: inline-block;
     padding: 0.3em 0.3em;
-    border: 0.2em solid #797979;
-    background-color: #797979;
+    border: 0.4em solid #000000;
+    background-color: #3b91e2;
     cursor: pointer;
-    margin-right: 0.7em;
-    margin-left: 0.7em;
+    margin-right: 0.1em;
+    margin-left: 0.1em;
     border-radius: 50%;
     transition: 0.5s;
 }
 
 label:hover {
     background-color: white !important;
-    border: 0.2em solid white;
     transition: 0.5s;
 }
 
@@ -118,7 +117,7 @@ label:hover {
 #slide2:checked ~ .text-wrap > .controls > label:nth-of-type(2),
 #slide3:checked ~ .text-wrap >.controls > label:nth-of-type(3),
 #slide4:checked ~ .text-wrap >.controls >label:nth-of-type(4){
-  background-color: transparent;
+  background-color: rgb(83, 83, 83);
 }
 
 .slides {
@@ -195,57 +194,57 @@ input#slide4:checked~.text-wrap>.text-slide>.text {
     }
     @-webkit-keyframes flipInY {
     0% {
-    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
-    transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+    -webkit-transform: perspective(40em) rotate3d(0, 1, 0, 90deg);
+    transform: perspective(40em) rotate3d(0, 1, 0, 90deg);
     -webkit-transition-timing-function: ease-in;
     transition-timing-function: ease-in;
     opacity: 0;
     }
     40% {
-    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
-    transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+    -webkit-transform: perspective(40em) rotate3d(0, 1, 0, -20deg);
+    transform: perspective(40em) rotate3d(0, 1, 0, -20deg);
     -webkit-transition-timing-function: ease-in;
     transition-timing-function: ease-in;
     }
     60% {
-    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
-    transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+    -webkit-transform: perspective(40em) rotate3d(0, 1, 0, 10deg);
+    transform: perspective(40em) rotate3d(0, 1, 0, 10deg);
     opacity: 1;
     }
     80% {
-    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
-    transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+    -webkit-transform: perspective(40em) rotate3d(0, 1, 0, -5deg);
+    transform: perspective(40em) rotate3d(0, 1, 0, -5deg);
     }
     100% {
-    -webkit-transform: perspective(400px);
-    transform: perspective(400px);
+    -webkit-transform: perspective(40em);
+    transform: perspective(40em);
     }
     }
     @keyframes flipInY {
     0% {
-    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
-    transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+    -webkit-transform: perspective(40em) rotate3d(0, 1, 0, 90deg);
+    transform: perspective(40em) rotate3d(0, 1, 0, 90deg);
     -webkit-transition-timing-function: ease-in;
     transition-timing-function: ease-in;
     opacity: 0;
     }
     40% {
-    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
-    transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+    -webkit-transform: perspective(40em) rotate3d(0, 1, 0, -20deg);
+    transform: perspective(40em) rotate3d(0, 1, 0, -20deg);
     -webkit-transition-timing-function: ease-in;
     transition-timing-function: ease-in;
     }
     60% {
-    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
-    transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+    -webkit-transform: perspective(40em) rotate3d(0, 1, 0, 10deg);
+    transform: perspective(40em) rotate3d(0, 1, 0, 10deg);
     opacity: 1;
     }
     80% {
-    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
-    transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+    -webkit-transform: perspective(40em) rotate3d(0, 1, 0, -5deg);
+    transform: perspective(40em) rotate3d(0, 1, 0, -5deg);
     }
     100% {
-    -webkit-transform: perspective(400px);
-    transform: perspective(400px);
+    -webkit-transform: perspective(40em);
+    transform: perspective(40em);
     }
     }
