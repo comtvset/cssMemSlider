@@ -103,6 +103,11 @@ label:hover {
     transition: 0.5s;
 }
 
+label:active {
+    background-color: rgb(83, 83, 83) !important;
+    border: 0.4em solid #ffbb00;
+}
+
 .wrapper label {
 	cursor: pointer;
 	display: inline-block;
